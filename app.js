@@ -30,7 +30,7 @@ async function carregar(urlDaConsulta) {
     textTotalPaginas.innerText = ` A API retornou: ${totalPaginas} páginas.`; // exibindo o total de personagens no HTML.
 
 
-    const nomePrimeiroPersonagem = json.results[0].name;
+    const nomePrimeiroPersonagem = json.results[10].name + " - -  " + json.results[10].species;// mostrando o nome do primeiro personagem
     textNomePersonagem.innerText = ` O nome do primeiro personagem é: ${nomePrimeiroPersonagem}`; // exibindo o nome do personagem no HTML
 
 }
